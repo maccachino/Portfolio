@@ -1,0 +1,17 @@
+.buttonWrapper {
+  button {
+    padding: 1rem 3rem;
+    background-color: transparent;
+    color: aqua;
+    border: 1px solid aqua;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:hover {
+      outline: none;
+      box-shadow: 4px 4px 0 0 aqua;
+      transform: translate(-5px, -5px);
+      transition: 0.5s;
+    }
+  }
+}

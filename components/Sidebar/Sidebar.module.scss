@@ -1,0 +1,29 @@
+$phone-breakpoint: 767px;
+$tablet-start: 768px;
+$tablet-end: 1023px;
+
+.sidebarWrapper {
+  color: aqua;
+  height: 100vh;
+  position: fixed;
+  left: 3rem;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @media screen and (max-width: $tablet-end) {
+    display: none;
+  }
+
+  a {
+    padding-bottom: 2rem;
+
+    svg {
+      stroke: aqua;
+      fill: aqua;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

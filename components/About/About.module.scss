@@ -1,0 +1,207 @@
+$phone-breakpoint: 767px;
+$tablet-start: 768px;
+$tablet-end: 1023px;
+$mini-laptop-start: 1024px;
+$mini-laptop-end: 1439px;
+
+.aboutWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .textWrapper {
+    width: 70%;
+
+    @media screen and (max-width: $phone-breakpoint) {
+      width: 100%;
+      padding: 1rem;
+    }
+
+    h3 {
+      color: aqua;
+      padding-bottom: 2rem;
+    }
+
+    .about {
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and (max-width: $phone-breakpoint) {
+        flex-direction: column-reverse;
+      }
+
+      .aboutText {
+        width: 55%;
+
+        @media screen and (max-width: $phone-breakpoint) {
+          width: 100%;
+          padding-top: 2rem;
+        }
+
+        p {
+          color: #8892B0;
+        }
+
+        ul {
+          color: aqua;
+          padding: 1rem 0 0 1rem;
+          display: grid;
+          grid-template-rows: 2fr 2fr;
+          grid-template-columns: 3fr 3fr 3fr;
+
+          li {
+            padding: 0.5rem;
+          }
+        }
+      }
+      
+      img {
+        width: 20rem;
+        height: 20rem;
+        border: 2px solid aqua;
+        border-radius: 1rem;
+
+        @media screen and (max-width: $phone-breakpoint) {
+          width: 15rem;
+          height: 15rem;
+          display: flex;
+          align-self: center;
+          justify-self: center;
+        }
+
+        @media screen and (min-width: $tablet-start) and (max-width: $tablet-end) {
+          width: 15rem;
+          height: 15rem;
+        }
+      }
+    }
+
+    .skillsWrapper {
+      padding-top: 3rem;
+
+      h4 {
+        padding-bottom: 1rem;
+      }
+
+      .skills {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+
+        @media screen and (max-width: $phone-breakpoint) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (min-width: $tablet-start) and (max-width: $tablet-end) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (min-width: $mini-laptop-start) and (max-width: $mini-laptop-end) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .skill {
+          background-color: transparent;
+          perspective: 1000px;
+
+          .skillInner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+
+            .skillFront {
+              width: 100%;
+              padding: 2rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              background-color: rgba($color: #8892B0, $alpha: 0.2);
+              border-radius: 1rem;
+              backface-visibility: hidden;
+            }
+
+            .skillBack {
+              width: 100%;
+              padding: 2rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              background-color: rgba($color: #8892B0, $alpha: 0.2);
+              border-radius: 1rem;
+              transform: rotateY(180deg);
+              backface-visibility: hidden;
+              margin-top: -12rem;
+
+              @media screen and (max-width: $tablet-end) {
+                display: none;
+              }
+
+              svg {
+                stroke: aqua;
+                fill: aqua;
+              }
+              
+              p {
+                color: aqua;
+              }
+            }
+          }
+
+          &:hover{
+
+            .skillInner {
+              transform: rotateY(180deg);
+
+              @media screen and (max-width: $tablet-end) {
+                transform: none;
+              }
+            }
+          }
+
+          svg {
+            stroke: #8892B0;
+            fill: #8892B0;
+            width: 3rem;
+            height: 3rem;
+
+            @media screen and (max-width: $phone-breakpoint) {
+              stroke: aqua;
+              fill: aqua;
+              width: 3rem;
+              height: 3rem;
+            }
+
+            @media screen and (min-width: $tablet-start) and (max-width: $tablet-end) {
+              stroke: aqua;
+              fill: aqua;
+            }
+          }
+
+          p {
+            color: #8892B0;
+            font-size: 2rem;
+            font-weight: 600;
+            padding-top: 1rem;
+
+            @media screen and (max-width: $phone-breakpoint) {
+              color: aqua;
+              font-size: 1rem;
+              font-weight: 600;
+              padding-top: 1rem;
+            }
+
+            @media screen and (min-width: $tablet-start) and (max-width: $tablet-end) {
+              color: aqua;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+$phone-breakpoint: 767px;
+$tablet-start: 768px;
+$tablet-end: 1023px;
+
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+
+  .contact {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: $phone-breakpoint) {
+      width: 100%;
+      padding: 1rem;
+    }
+
+    h3 {
+      color: aqua;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    p {
+      width: 60%;
+      text-align: center;
+      padding: 2rem 0;
+
+      @media screen and (max-width: $phone-breakpoint) {
+        width: 100%;
+      }
+    }
+
+    button {
+      padding: 1rem 3rem;
+      background-color: transparent;
+      color: aqua;
+      border: 1px solid aqua;
+      border-radius: 3px;
+      cursor: pointer;
+
+      @media screen and (max-width: $tablet-end) {
+        padding: 1rem 4rem;
+      }
+
+      &:hover {
+        outline: none;
+        box-shadow: 4px 4px 0 0 aqua;
+        transform: translate(-5px, -5px);
+        transition: 0.5s;
+      }
+    }
+  }
+
+  .footer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+
+    @media screen and (max-width: $phone-breakpoint) {
+      width: 100%;
+    }
+
+    p {
+      color: #8892B0;
+      font-size: 0.8rem;
+    }
+  }
+}
