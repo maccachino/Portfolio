@@ -121,9 +121,18 @@ $tablet-end: 1023px;
             object-fit: scale-down;
             border: 2px solid aqua;
             border-radius: 1rem;
+            transition: 0.5s;
 
             &:hover {
-              background-color: rgba(7, 252, 252, 0.85);
+              box-shadow: 4px 4px 0 0 aqua;
+              transform: translate(-5px, -5px);
+              transition: 0.5s;
+
+              @media screen and (max-width: $tablet-end) {
+                box-shadow: none;
+                transform: none;
+                transition: none;
+              }
             }
           }
         }
@@ -151,6 +160,14 @@ $tablet-end: 1023px;
           align-items: center;
 
           &:hover {
+            margin-top: -0.5rem;
+            transition: 0.5s;
+
+            @media screen and (max-width: $tablet-end) {
+              margin-top: 0;
+              transition: none;
+            }
+
             h5 {
               color: aqua;
             }

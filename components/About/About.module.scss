@@ -61,6 +61,19 @@ $mini-laptop-end: 1439px;
         height: 20rem;
         border: 2px solid aqua;
         border-radius: 1rem;
+        transition: 0.5s;
+
+        &:hover {
+          box-shadow: 4px 4px 0 0 aqua;
+          transform: translate(-5px, -5px);
+          transition: 0.5s;
+
+          @media screen and (max-width: $tablet-end) {
+            box-shadow: none;
+            transform: none;
+            transition: none;
+          }
+        }
 
         @media screen and (max-width: $phone-breakpoint) {
           width: 15rem;
@@ -72,7 +85,7 @@ $mini-laptop-end: 1439px;
 
         @media screen and (min-width: $tablet-start) and (max-width: $tablet-end) {
           width: 15rem;
-          height: 15rem;
+          height: 15rem
         }
       }
     }

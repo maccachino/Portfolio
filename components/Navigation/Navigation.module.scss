@@ -137,26 +137,6 @@ $tablet-end: 1023px;
 
         }
       }
-
-      button {
-        padding: 1rem 2rem;
-        background-color: transparent;
-        color: aqua;
-        border: 1px solid aqua;
-        border-radius: 3px;
-        cursor: pointer;
-
-        @media screen and (max-width: $tablet-end) {
-          padding: 1rem 4rem;
-        }
-
-        &:hover {
-          outline: none;
-          box-shadow: 4px 4px 0 0 aqua;
-          transform: translate(-5px, -5px);
-          transition: 0.5s;
-        }
-      }
     }
   }
 }
