@@ -31,10 +31,10 @@ const Navigation = () => {
       </div>
       <div className={`${styles.nav} ${showNavbar && styles.active}`}>
         <div className={styles.linkWrapper}>
-          <Link onClick={handleShowNavbar} href={"#home"}>Home</Link>
+          {/* <Link onClick={handleShowNavbar} href={"#home"}>Home</Link>
           <Link onClick={handleShowNavbar} href={"#about"}>About</Link>
           <Link onClick={handleShowNavbar} href={"#projects"}>Projects</Link>
-          <Link onClick={handleShowNavbar} href={"#contact"}>Contact</Link>
+          <Link onClick={handleShowNavbar} href={"#contact"}>Contact</Link> */}
         </div>
         <div className={styles.buttonsWrapper}>
           <div className={styles.buttons}>
