@@ -150,8 +150,7 @@ const Projects = () => {
                     Salestrekker
                   </h5>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card&apos;s content.
+                    Income tax calculator
                   </Card.Text>
                   <Card.Footer style={{
                     borderTop: 'none',
@@ -200,8 +199,7 @@ const Projects = () => {
                     Shop
                   </h5>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card&apos;s content.
+                    One page shop product
                   </Card.Text>
                   <Card.Footer style={{
                     borderTop: 'none',

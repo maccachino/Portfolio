@@ -77,6 +77,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior:auto;
 }
 
 html,
@@ -93,6 +94,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    scroll-behavior: smooth;
 }
 
 a {

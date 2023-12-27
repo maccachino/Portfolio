@@ -23,22 +23,35 @@ const About = () => {
         <div className={styles.about}>
           <div className={styles.aboutText}>
             <p>
-              Hello! My name is Matija and I enjoy creating things that live on the internet.
-              My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes
-              — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
-              <br />
-              <br />
-              Fast-forward to today, and I&apos;ve had the privilege of working at an advertising agency,
-              a start-up, a huge corporation, and a student-led design studio.
-              My main focus these days is building accessible, inclusive products and digital experiences at Upstatement
-              for a variety of clients.
-              <br />
-              <br />
-              I also recently launched a course that covers everything you need to build a web app with the Spotify API
-              using Node & React.
-              <br />
-              <br />
+              Hello there! I'm Matija Petrovic, a passionate frontend web developer with
+              over 2 and a half years of hands-on experience in crafting engaging
+              and dynamic user experiences. My journey in the ever-evolving
+              realm of web development has been nothing short of exhilarating.
             </p>
+            <p>
+              I thrive on turning imaginative concepts into tangible, pixel-perfect realities. With a strong foundation in HTML, CSS,
+              and JavaScript, I specialize in building robust and responsive web applications. My toolkit includes cutting-edge
+              technologies like React, Next.js, and Redux, enabling me to create seamless, interactive, and user-friendly interfaces.
+            </p>
+            <p>
+              Throughout my professional journey, I've had the privilege of working on diverse
+              projects that have honed my skills and broadened my perspective.
+            </p>
+            <h3>Why Work With Me:</h3>
+            <ul>
+              <li>
+                <strong>Collaboration:</strong> I value opeb communication and collaboration, believing that the best solutions emerge
+                from a shared exchange of ideas.
+              </li>
+              <li> 
+                <strong>Detail-Oriented:</strong> My keen eye for detail ensures that every line of code and every
+                design element aligns seamlessly for a polished end product.
+              </li>
+              <li>
+                <strong>Adaptability:</strong> In the dynamic world of web development, adaptability is key.
+                I'm always eager to embrace new challenges and expand my skill set.
+              </li>
+            </ul>
           </div>
           <Image src={image} alt="Matija Petrovic" />
         </div>
