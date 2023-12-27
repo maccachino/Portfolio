@@ -40,7 +40,7 @@ const About = () => {
             <h3>Why Work With Me:</h3>
             <ul>
               <li>
-                <strong>Collaboration:</strong> I value opeb communication and collaboration, believing that the best solutions emerge
+                <strong>Collaboration:</strong> I value open communication and collaboration, believing that the best solutions emerge
                 from a shared exchange of ideas.
               </li>
               <li> 
