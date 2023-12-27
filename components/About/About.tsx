@@ -23,7 +23,7 @@ const About = () => {
         <div className={styles.about}>
           <div className={styles.aboutText}>
             <p>
-              Hello there! I'm Matija Petrovic, a passionate frontend web developer with
+              Hello there! I&apos;m Matija Petrovic, a passionate frontend web developer with
               over 2 and a half years of hands-on experience in crafting engaging
               and dynamic user experiences. My journey in the ever-evolving
               realm of web development has been nothing short of exhilarating.
@@ -34,7 +34,7 @@ const About = () => {
               technologies like React, Next.js, and Redux, enabling me to create seamless, interactive, and user-friendly interfaces.
             </p>
             <p>
-              Throughout my professional journey, I've had the privilege of working on diverse
+              Throughout my professional journey, I&apos;ve had the privilege of working on diverse
               projects that have honed my skills and broadened my perspective.
             </p>
             <h3>Why Work With Me:</h3>
@@ -49,7 +49,7 @@ const About = () => {
               </li>
               <li>
                 <strong>Adaptability:</strong> In the dynamic world of web development, adaptability is key.
-                I'm always eager to embrace new challenges and expand my skill set.
+                I&apos;m always eager to embrace new challenges and expand my skill set.
               </li>
             </ul>
           </div>
